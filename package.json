@@ -1,0 +1,29 @@
+{
+  "name": "autojetiq",
+  "version": "1.0.0",
+  "description": "chrome extension for JetIQ",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack --watch --progress --config webpack.dev.js",
+    "build": "webpack --watch --progress --config webpack.prod.js"
+  },
+  "author": "Artem Verenko",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chrome": "^0.0.263",
+    "@types/react": "^18.2.73",
+    "@types/react-dom": "^18.2.23",
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^12.0.2",
+    "css-loader": "^6.10.0",
+    "html-webpack-plugin": "^5.6.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "style-loader": "^3.3.4",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.4.3",
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-merge": "^5.10.0"
+  }
+}
