@@ -62,6 +62,7 @@ function getHtmlPlugins(chunks) {
     return chunks.map(chunk => new HtmlWebpackPlugin({
         title: "AutoJetIQ Extension",
         filename: `${chunk}.html`,
-        chunks: [chunk]
+        chunks: [chunk],
+        template: path.resolve(`src/${chunk}/${chunk}.html`)
     }));
 }

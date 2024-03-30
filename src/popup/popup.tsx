@@ -3,10 +3,17 @@ import ReactDOM from 'react-dom/client';
 
 import './popup.css';
 
-const test = <img src='icon.png' alt="icon" />
+function Popup() {
+  return (
+    <div className="popup">
+      <h1>Popup</h1>
+        <img src='icon.png' alt="icon" />
+    </div>
+  );
+}
 
-const rootElement = document.body;
-const root = ReactDOM.createRoot(rootElement);
+
+const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 
 
-root.render(test);
+root.render(<Popup />);
