@@ -60,7 +60,7 @@ module.exports = {
 
 function getHtmlPlugins(chunks) {
     return chunks.map(chunk => new HtmlWebpackPlugin({
-        title: "AutoJetIQ Extension",
+        title: "AutoJetIQ",
         filename: `${chunk}.html`,
         chunks: [chunk],
         template: path.resolve(`src/${chunk}/${chunk}.html`)

@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "AutoJetIQ Extension",
+  "name": "AutoJetIQ",
   "description": "This extension will help you to automate the JetIQ process",
   "version": "1.0.0",
   "icons": {
@@ -8,9 +8,16 @@
     "48": "icon.png",
     "128": "icon.png"
   },
+  "permissions": [
+    "storage",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "https://api.openai.com/*"
+  ],
   "action": {
     "default_popup": "popup.html",
-    "default_title": "AutoJetIQ Extension",
+    "default_title": "AutoJetIQ",
     "default_icon": "icon.png"
   },
   "options_page": "options.html",
